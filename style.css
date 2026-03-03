@@ -110,3 +110,29 @@ footer img{
   width: 16px;
   vertical-align: middle;
 }
+
+/* Adaptações para Celulares e Tablets menores */
+@media (max-width: 768px) {
+  body {
+    width: 100%; /* Ocupa toda a tela do celular em vez dos 1120px fixos */
+    margin-top: 32px; /* Reduz a margem do topo, que era de 88px */
+    padding: 0 16px; /* Adiciona um respiro nas laterais para o texto não colar na borda */
+  }
+
+  img {
+    width: 100%; /* Faz as imagens encolherem junto com o tamanho da tela */
+    border-radius: 16px; /* Diminui um pouco o arredondamento para telas menores */
+  }
+
+  h1 {
+    font-size: 28px; /* Reduz o tamanho da fonte do título principal */
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
